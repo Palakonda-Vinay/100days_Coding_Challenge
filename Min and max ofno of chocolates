@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Step 1: Input the number of test cases
+        int T = scanner.nextInt();
+
+        // Step 2: Process each test case
+        for (int i = 0; i < T; i++) {
+            // Input the initial number of chocolates for each test case
+            int N = scanner.nextInt();
+
+            // Step 3: Calculate the minimum and maximum number of children
+            int minChildren = N / 2;
+            int maxChildren = N - (N % 2);
+
+            // Step 4: Output the results for each test case
+            System.out.println(minChildren + " " + maxChildren);
+        }
+
+        // Close the scanner
+        scanner.close();
+    }
+}
